@@ -1,5 +1,53 @@
-node_modules
 # Keep environment variables out of version control
 .env
 ./node_modules
 /generated/prisma
+
+# Dependencias
+node_modules/
+
+# Archivos compilados de TypeScript
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Base de datos local (SQLite)
+*.db
+*.db-journal
+dev.db
+dev.db-journal
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Prisma (opcional)
+# node_modules/.prisma/  # Ya está cubierto por node_modules/
+
+# Temporal
+tmp/
+temp/
+*.tmp
+
+# Testing
+coverage/
+.nyc_output/
