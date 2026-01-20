@@ -1,0 +1,26 @@
+meta {
+  name: crearPost
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}posts
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Introducción a Python",
+    "content": "Lorem ipsum dolor sit amet",
+    "excerpt": "Aprende todo sobre Python para análisis de datos",
+    "authorId": 1,
+    "categoryIds": [1, 2]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
